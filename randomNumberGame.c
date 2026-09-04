@@ -13,10 +13,9 @@ int main() {
 	int userGuesses = 0;
 	
 	while(keepGoing) {
-		int userNum;
-
 		printf("Guess a number between %d and %d (inclusive): \n", min, max);
 		
+		int userNum;
 		int intCheck = scanf("%d", &userNum);
 		printf("You entered: %d \n", userNum);
 		
