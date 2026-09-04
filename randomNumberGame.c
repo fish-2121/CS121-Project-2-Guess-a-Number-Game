@@ -20,7 +20,7 @@ int main() {
 		int intCheck = scanf("%d", &userNum);
 		printf("You entered: %d \n", userNum);
 		
-		if (intCheck == 1) {
+		//if (intCheck == 1) {      disabled for now because it can break the program and idk how to fix it :(
 			userGuesses++;
 			if (userNum == randomNum) {
 				if (userGuesses > averageGuesses) {
@@ -38,10 +38,10 @@ int main() {
 					printf("Too low! Try again");
 				} // end of too high/low if
 			} // end of userNum comparison
-		} else {
-			printf("That is not a number! Try again! \n");
-			printf("\n");
-		} // end of if intCheck
+//		} else {
+//			printf("That is not a number! Try again! \n");
+//			printf("\n");
+//		} // end of if intCheck
 	} // end of while loop
 
 	return 0;
