@@ -5,7 +5,8 @@
 
 int main() {
 	int min = 1;
-	int max = 3;
+	int max = 10;
+	int averageGuesses = 7;
 	
 	bool keepGoing = true;
 	srand(time(NULL));
@@ -22,13 +23,24 @@ int main() {
 		if (intCheck == 1) {
 			userGuesses++;
 			if (userNum == randomNum) {
-				printf("You guessed the number in %d tries! Great job! \n", userGuesses);
+				if (userGuesses > averageGuesses) {
+					printf("You guessed the number in %d tries! That is above the average... \n", userGuesses);
+				} else if (userGuesses < averageGuesses) {
+					printf("You guessed the number in %d tries! That is below the average! Amazing job! \n", userGuesses);
+				} else {
+					printf("You guessed the number in %d tries! That is exactly the average! Great job! \n", userGuesses);
+				} // end of averageGuesses if
 				keepGoing = false;
 			} else {
-				printf("Incorrect! \n");
+				if (userNum > randomNum) {
+					printf("Too high! Try again");
+				} else {
+					printf("Too low! Try again");
+				} // end of too high/low if
 			} // end of userNum comparison
 		} else {
 			printf("That is not a number! Try again! \n");
+			printf("\n");
 		} // end of if intCheck
 	} // end of while loop
 
