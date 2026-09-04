@@ -17,15 +17,10 @@ int main() {
 
 		printf("Guess a number between %d and %d (inclusive): \n", min, max);
 		
-		bool isANumber = true;
 		int intCheck = scanf("%d", &userNum);
 		printf("You entered: %d \n", userNum);
-		if (intCheck == 0) {
-			isANumber = false;
-			printf("That is not a number! Try again! \n");
-		}
 		
-		if (isANumber) {
+		if (intCheck == 1) {
 			userGuesses++;
 			if (userNum == randomNum) {
 				printf("You guessed the number in %d tries! Great job! \n", userGuesses);
@@ -33,7 +28,9 @@ int main() {
 			} else {
 				printf("Incorrect! \n");
 			} // end of userNum comparison
-		} // end of if isANumber
+		} else {
+			printf("That is not a number! Try again! \n");
+		} // end of if intCheck
 	} // end of while loop
 
 	return 0;
