@@ -15,10 +15,11 @@ int main() {
 	while(keepGoing) {
 		int userNum;
 
-		printf("Guess a number: \n");
+		printf("Guess a number between %d and %d (inclusive): \n", min, max);
 		
 		bool isANumber = true;
 		int intCheck = scanf("%d", &userNum);
+		printf("You entered: %d \n", userNum);
 		if (intCheck == 0) {
 			isANumber = false;
 			printf("That is not a number! Try again! \n");
