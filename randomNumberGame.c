@@ -38,7 +38,7 @@ int main() {
 					printf("Too low! Try again");
 				} // end of too high/low if
 			} // end of userNum comparison
-//		} else {
+//		} else {      disabled for now because it can break the program and idk how to fix it :(
 //			printf("That is not a number! Try again! \n");
 //			printf("\n");
 //		} // end of if intCheck
