@@ -5,7 +5,7 @@
 
 int main() {
 	int min = 1;
-	int max = 10;
+	int max = 100;
 	int averageGuesses = 7;
 	
 	bool keepGoing = true;
