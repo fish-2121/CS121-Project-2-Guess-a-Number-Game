@@ -7,6 +7,6 @@
 - The program will print into the console asking the user to guess a number
 - The user will then input their number into the console, which will add 1 to the guess variable
 - The program will compare the user's guess to the correct number
-- If the user is correct, the program will congratulate the user and say how many guesses it took and if it is above, below, or at the average amount of guesses
+- If the user is correct, the program will congratulate the user and say how many guesses it took and if it is above, below, or at the average amount of guesses by comparing the number of guesses to the average (7)
 - The keepGoing variable will become false which will stop the game
-- If the user is incorrect, it will say the user is wrong and say if the guess was too high or too low and then continue the loop without changing the keepGoing variable
+- If the user is incorrect, it will say the user is wrong and say if the guess was too high or too low by comparing the guess to the random number and then continue the loop without changing the keepGoing variable
