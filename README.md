@@ -13,9 +13,3 @@
 - If the user is correct, the program will congratulate the user and say how many guesses it took
 - The keepGoing variable will become false which will stop the 
 - If the user is incorrect, it will say the user is wrong and continue the loop without changing the keepGoing variable
-
-### Here is how the program will check if the input is an integer:
-- First, a variable for the user's number will be created inside the while loop using ```int userNum```
-- Next, when it is time for the user to guess, it will be done with this line: ```int intCheck = scanf("%d", &userNum);```
-- This will take the input of the user and store it in userNum. The & symbol tells it to retrieve the location of the variable in memory instead of getting its value like it would without the symbol.
-- The reason it is stored in an int variable named intCheck is because if the user entered an integer, intCheck will have the value of 1. If not, it will be 0. This can be used in an if statement to see if someone entered a number or not.
