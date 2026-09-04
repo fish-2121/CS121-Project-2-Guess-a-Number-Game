@@ -20,7 +20,7 @@ int main() {
 		int intCheck = scanf("%d", &userNum);
 		printf("You entered: %d \n", userNum);
 		
-		//if (intCheck == 1) {      disabled for now because it can break the program and idk how to fix it :(
+//		if (intCheck == 1) {      disabled for now because it can break the program and idk how to fix it :(
 			userGuesses++;
 			if (userNum == randomNum) {
 				if (userGuesses > averageGuesses) {
